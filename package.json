@@ -1,0 +1,10 @@
+{
+  "name": "walbot",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.14.0",
+    "cheerio": "^0.19.0",
+    "express": "^4.13.3"
+  }
+}
