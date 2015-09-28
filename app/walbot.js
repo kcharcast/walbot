@@ -7,7 +7,6 @@ module.exports = function (req, res, next) {
 	var apiKey = process.env.SLACK_API_KEY || 'local-development';
 
 	var phrases = {
-		// 'help me': require('./responses/helpMe'),
 		'cat me': require('./responses/catMe'),
 		'bird me': require('./responses/birdMe'),
 		'dog me': require('./responses/dogMe'),
