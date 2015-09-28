@@ -13,6 +13,7 @@ module.exports = function (req, res) {
 		'insult me': require('./responses/insultMe'),
 		'toss a coin': require('./responses/tossACoin'),
 		'swearword': require('./responses/swearword'),
+		'what\'s for dinner': require('./responses/whatsForDinner'),
 		'what\'s for lunch': require('./responses/whatsForLunch'),
 		'tell me a joke': require('./responses/tellMeAJoke'),
 	};
