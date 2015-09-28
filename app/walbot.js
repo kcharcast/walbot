@@ -1,9 +1,8 @@
-module.exports = function (req, res, next) {
+module.exports = function (req, res) {
 
 	var userName = req.body.user_name;
 	var user = '@' + userName + ', ';
 	var request = req.body.text;
-	var response = null;
 	var apiKey = process.env.SLACK_API_KEY || 'local-development';
 
 	var phrases = {
