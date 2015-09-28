@@ -11,6 +11,7 @@ module.exports = function (req, res) {
 		'bird me': require('./responses/birdMe'),
 		'dog me': require('./responses/dogMe'),
 		'insult me': require('./responses/insultMe'),
+		'qr': require('./responses/qr'),
 		'toss a coin': require('./responses/tossACoin'),
 		'swearword': require('./responses/swearword'),
 		'what\'s for dinner': require('./responses/whatsForDinner'),
