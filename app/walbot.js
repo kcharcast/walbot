@@ -15,6 +15,7 @@ module.exports = function (req, res) {
 		'swearword': require('./responses/swearword'),
 		'what\'s for lunch': require('./responses/whatsForLunch'),
 		'tell me a joke': require('./responses/tellMeAJoke'),
+		'spotify me': require('.responses/spotify')
 	};
 
 	var respond = function(data) {
