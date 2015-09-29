@@ -2,7 +2,7 @@ module.exports = function (req, res) {
 
 	var userName = req.body.user_name;
 	var user = '@' + userName + ', ';
-	var request = req.body.text;
+	var request = req.body.text.replace(/’/g, '\'');
 	var apiKey = process.env.SLACK_API_KEY || 'local-development';
 
 	var phrases = {
@@ -13,6 +13,7 @@ module.exports = function (req, res) {
 		'insult me': require('./responses/insultMe'),
 		'toss a coin': require('./responses/tossACoin'),
 		'swearword': require('./responses/swearword'),
+		'what\'s for dinner': require('./responses/whatsForDinner'),
 		'what\'s for lunch': require('./responses/whatsForLunch'),
 		'tell me a joke': require('./responses/tellMeAJoke'),
 		'spotify me': require('./responses/spotify')
