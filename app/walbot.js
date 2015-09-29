@@ -16,7 +16,8 @@ module.exports = function (req, res) {
 		'what\'s for dinner': require('./responses/whatsForDinner'),
 		'what\'s for lunch': require('./responses/whatsForLunch'),
 		'tell me a joke': require('./responses/tellMeAJoke'),
-		'spotify me': require('./responses/spotify')
+		'spotify me': require('./responses/spotify'),
+		'urban dictionary': require('./responses/urbanDictionary')
 	};
 
 	var respond = function(data) {
